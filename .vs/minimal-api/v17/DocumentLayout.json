@@ -3,20 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\Christian-Paulo\\Desktop\\DIO\\ProjetoDIOA-API\\minimal-api\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{15EAFAB6-6161-4D8D-8F60-946C7BC9EC02}|minimal-api.csproj|c:\\users\\christian-paulo\\desktop\\dio\\projetodioa-api\\minimal-api\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}",
-      "RelativeMoniker": "D:0:0:{15EAFAB6-6161-4D8D-8F60-946C7BC9EC02}|minimal-api.csproj|solutionrelative:.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{15EAFAB6-6161-4D8D-8F60-946C7BC9EC02}|minimal-api.csproj|c:\\users\\christian-paulo\\desktop\\dio\\projetodioa-api\\minimal-api\\infraestrutura\\db\\dbcontexto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{15EAFAB6-6161-4D8D-8F60-946C7BC9EC02}|minimal-api.csproj|solutionrelative:infraestrutura\\db\\dbcontexto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{15EAFAB6-6161-4D8D-8F60-946C7BC9EC02}|minimal-api.csproj|c:\\users\\christian-paulo\\desktop\\dio\\projetodioa-api\\minimal-api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{15EAFAB6-6161-4D8D-8F60-946C7BC9EC02}|minimal-api.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{15EAFAB6-6161-4D8D-8F60-946C7BC9EC02}|minimal-api.csproj|c:\\users\\christian-paulo\\desktop\\dio\\projetodioa-api\\minimal-api\\dominio\\dtos\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{15EAFAB6-6161-4D8D-8F60-946C7BC9EC02}|minimal-api.csproj|solutionrelative:dominio\\dtos\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,63 +18,37 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": ".gitignore",
-              "DocumentMoniker": "C:\\Users\\Christian-Paulo\\Desktop\\DIO\\ProjetoDIOA-API\\minimal-api\\.gitignore",
-              "RelativeDocumentMoniker": ".gitignore",
-              "ToolTip": "C:\\Users\\Christian-Paulo\\Desktop\\DIO\\ProjetoDIOA-API\\minimal-api\\.gitignore",
-              "RelativeToolTip": ".gitignore",
-              "ViewState": "AQIAAAgAAAAAAAAAAAAAwBIAAAAbAAAA",
-              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAF8SURBVDhPjVNLTgJBEG1lwpoFB3GNK9fieA48hD8iwT/ihwgSDAIHgAGXXsEV18CNzL/LquqZdsYM6kteXqcy3fWqpmpNRBgOhyABBEgpAFVKPIMUcYzUyOU\u002BXM/b2qtU3vkSfRjjZTCAMAw1A2LwzdFoBPP5HNqdzuL27n4juibWI\u002BUshBA1DIkhEx9iEorFotgslQqGYbxxAGFEqt1MxmPWJLbLZdZ\u002Bv89q5PMFPiTR6z2zdaxR0fXA0XTBcVywkb4fwHXjRteecIDNQ7UmExVYAdPcxYaqclN46na5WenMKjtlVnTYwcXlVYaDqImW9beD5N/TeGy32QHXm6hZ03ZgiSQHp2fnWQ4oBmJqWSqwAqZpZjt4aLXAD4J0VqyZsmoubfB8H2r1eoaD6NXZ9HcHO\u002BSA3f4AjifXl8rItOETM8ckB9WTWpYD9RdeZ1PWVWAHWXPQaDb59f/w8LiqHeh1pvGkCaP6qB8yXusoxmuNZ7XmII4O9vGuEF86osuDYRkpYQAAAABJRU5ErkJggg==",
-              "WhenOpened": "2024-07-30T22:35:40.756Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
               "Title": "DbContexto.cs",
               "DocumentMoniker": "C:\\Users\\Christian-Paulo\\Desktop\\DIO\\ProjetoDIOA-API\\minimal-api\\Infraestrutura\\Db\\DbContexto.cs",
               "RelativeDocumentMoniker": "Infraestrutura\\Db\\DbContexto.cs",
               "ToolTip": "C:\\Users\\Christian-Paulo\\Desktop\\DIO\\ProjetoDIOA-API\\minimal-api\\Infraestrutura\\Db\\DbContexto.cs",
               "RelativeToolTip": "Infraestrutura\\Db\\DbContexto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAAAAAA",
+              "ViewState": "AQIAAAoAAAAAAAAAAAA1wB0AAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-30T22:30:25.074Z",
+              "WhenOpened": "2024-07-31T01:53:57.263Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "LoginDTO.cs",
-              "DocumentMoniker": "C:\\Users\\Christian-Paulo\\Desktop\\DIO\\ProjetoDIOA-API\\minimal-api\\Dominio\\DTOs\\LoginDTO.cs",
-              "RelativeDocumentMoniker": "Dominio\\DTOs\\LoginDTO.cs",
-              "ToolTip": "C:\\Users\\Christian-Paulo\\Desktop\\DIO\\ProjetoDIOA-API\\minimal-api\\Dominio\\DTOs\\LoginDTO.cs",
-              "RelativeToolTip": "Dominio\\DTOs\\LoginDTO.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-30T22:21:37.236Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Christian-Paulo\\Desktop\\DIO\\ProjetoDIOA-API\\minimal-api\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\Christian-Paulo\\Desktop\\DIO\\ProjetoDIOA-API\\minimal-api\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAUAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-30T22:08:15.904Z",
+              "WhenOpened": "2024-07-31T01:41:13.001Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             }
           ]
         }
