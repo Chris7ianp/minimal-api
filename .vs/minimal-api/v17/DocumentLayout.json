@@ -3,20 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\Christian-Paulo\\Desktop\\DIO\\ProjetoDIOA-API\\minimal-api\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{15EAFAB6-6161-4D8D-8F60-946C7BC9EC02}|minimal-api.csproj|C:\\Users\\Christian-Paulo\\Desktop\\DIO\\ProjetoDIOA-API\\minimal-api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{15EAFAB6-6161-4D8D-8F60-946C7BC9EC02}|minimal-api.csproj|c:\\users\\christian-paulo\\desktop\\dio\\projetodioa-api\\minimal-api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{15EAFAB6-6161-4D8D-8F60-946C7BC9EC02}|minimal-api.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{15EAFAB6-6161-4D8D-8F60-946C7BC9EC02}|minimal-api.csproj|c:\\users\\christian-paulo\\desktop\\dio\\projetodioa-api\\minimal-api\\dominio\\interfaces\\iadministradorsevicos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{15EAFAB6-6161-4D8D-8F60-946C7BC9EC02}|minimal-api.csproj|solutionrelative:dominio\\interfaces\\iadministradorsevicos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{15EAFAB6-6161-4D8D-8F60-946C7BC9EC02}|minimal-api.csproj|c:\\users\\christian-paulo\\desktop\\dio\\projetodioa-api\\minimal-api\\dominio\\servicos\\administradorsevicos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{15EAFAB6-6161-4D8D-8F60-946C7BC9EC02}|minimal-api.csproj|solutionrelative:dominio\\servicos\\administradorsevicos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{15EAFAB6-6161-4D8D-8F60-946C7BC9EC02}|minimal-api.csproj|c:\\users\\christian-paulo\\desktop\\dio\\projetodioa-api\\minimal-api\\infraestrutura\\db\\dbcontexto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{15EAFAB6-6161-4D8D-8F60-946C7BC9EC02}|minimal-api.csproj|solutionrelative:infraestrutura\\db\\dbcontexto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,50 +14,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "IAdministradorSevicos.cs",
-              "DocumentMoniker": "C:\\Users\\Christian-Paulo\\Desktop\\DIO\\ProjetoDIOA-API\\minimal-api\\Dominio\\Interfaces\\IAdministradorSevicos.cs",
-              "RelativeDocumentMoniker": "Dominio\\Interfaces\\IAdministradorSevicos.cs",
-              "ToolTip": "C:\\Users\\Christian-Paulo\\Desktop\\DIO\\ProjetoDIOA-API\\minimal-api\\Dominio\\Interfaces\\IAdministradorSevicos.cs",
-              "RelativeToolTip": "Dominio\\Interfaces\\IAdministradorSevicos.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAkAAAAhAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-03T17:39:43.808Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "AdministradorSevicos.cs",
-              "DocumentMoniker": "C:\\Users\\Christian-Paulo\\Desktop\\DIO\\ProjetoDIOA-API\\minimal-api\\Dominio\\Servicos\\AdministradorSevicos.cs",
-              "RelativeDocumentMoniker": "Dominio\\Servicos\\AdministradorSevicos.cs",
-              "ToolTip": "C:\\Users\\Christian-Paulo\\Desktop\\DIO\\ProjetoDIOA-API\\minimal-api\\Dominio\\Servicos\\AdministradorSevicos.cs",
-              "RelativeToolTip": "Dominio\\Servicos\\AdministradorSevicos.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAqwBkAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-03T17:34:14.422Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "DbContexto.cs",
-              "DocumentMoniker": "C:\\Users\\Christian-Paulo\\Desktop\\DIO\\ProjetoDIOA-API\\minimal-api\\Infraestrutura\\Db\\DbContexto.cs",
-              "RelativeDocumentMoniker": "Infraestrutura\\Db\\DbContexto.cs",
-              "ToolTip": "C:\\Users\\Christian-Paulo\\Desktop\\DIO\\ProjetoDIOA-API\\minimal-api\\Infraestrutura\\Db\\DbContexto.cs",
-              "RelativeToolTip": "Infraestrutura\\Db\\DbContexto.cs",
-              "ViewState": "AQIAABEAAAAAAAAAAAAcwB0AAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-31T01:53:57.263Z",
-              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -79,9 +28,9 @@
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\Christian-Paulo\\Desktop\\DIO\\ProjetoDIOA-API\\minimal-api\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAAABoAAAA2AAAA",
+              "ViewState": "AQIAADYAAAAAAAAAAAAjwDQAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-31T01:41:13.001Z",
+              "WhenOpened": "2024-08-04T21:08:29.438Z",
               "EditorCaption": ""
             }
           ]
