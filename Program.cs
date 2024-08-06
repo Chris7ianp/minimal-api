@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using minimal.Dominio.Interfaces;
 using minimal.Dominio.Servicos;
 using minimal_api.Dominio.Entidades;
+using minimal_api.Dominio.Enuns;
 using minimal_api.Dominio.ModelView;
 using minimal_api.DTOs;
 using minimal_api.Infraestrutura.Db;
@@ -50,17 +51,78 @@ app.MapPost("/administradores/login", ([FromBody] LoginDTO loginDTO, IAdministra
 
 }).WithTags("Administradores");
 
-
-app.MapPost("/administradores", ([FromBody] LoginDTO loginDTO, IAdministradorServicos administradorServicos) =>
+app.MapGet("/administradores", ([FromQuery] int? pagina, IAdministradorServicos administradorServicos) =>
 {
-    if (administradorServicos.Login(loginDTO) != null)
-    {
-        return Results.Ok("Login feito com sucesso");
+    var adms = new List<AdministradorModelView>();
+    var administradores = administradorServicos.Todos(pagina);
+    foreach(var admin in administradores){
+        adms.Add(new AdministradorModelView{
+            
+            Id = admin.Id,
+            Email = admin.Email,
+            Perfil = admin.Perfil
+        });
     }
-    else
-        return Results.Unauthorized();
+
+
+    return Results.Ok(adms);
+}).WithTags("Administradores");
+
+app.MapGet("/administradores/{id}", ([FromRoute] int id, IAdministradorServicos administradorServicos) =>
+{
+    var administrador = administradorServicos.BuscarPorId(id);
+    if(administrador == null){
+        return Results.NotFound();
+    }
+
+    return Results.Ok(new AdministradorModelView{
+            
+            Id = administrador.Id,
+            Email = administrador.Email,
+            Perfil = administrador.Perfil
+    });
+    
+}).WithTags("Administradores");
+
+app.MapPost("/administradores", ([FromBody] AdministradorDTO administradorDTO, IAdministradorServicos administradorServicos) =>
+{
+    var validacao = new ErroDeValidacoes{
+        Mensagem =  new List<string>()
+    };
+
+        if(string.IsNullOrEmpty(administradorDTO.Email)){
+            validacao.Mensagem.Add("O E-mail nÃ£o pode ser vazio");
+        }
+        if(string.IsNullOrEmpty(administradorDTO.Senha)){
+            validacao.Mensagem.Add("A Senha nÃ£o pode ser vazia");
+        }
+        if(administradorDTO.Perfil == null){
+            validacao.Mensagem.Add("O Perfil nÃ£o pode ser vazio");
+        }
+
+        if(validacao.Mensagem.Count > 0)
+            return Results.BadRequest(validacao);
+
+    var administrador = new Administrador{
+        Email = administradorDTO.Email,
+        Senha = administradorDTO.Senha,
+        Perfil = administradorDTO.Perfil.ToString() ?? Perfil.Editor.ToString()
+    };
+
+    administradorServicos.Incluir(administrador);
+
+    return Results.Created($"/administrador/{administrador.Id}", new AdministradorModelView{
+            
+            Id = administrador.Id,
+            Email = administrador.Email,
+            Perfil = administrador.Perfil
+    });
+
 
 }).WithTags("Administradores");
+
+
+
 
 #endregion
 
@@ -75,12 +137,12 @@ ErroDeValidacoes validaDTO(VeiculoDTO veiculoDTO)
 
     if (string.IsNullOrEmpty(veiculoDTO.Nome))
     {
-        validacoes.Mensagem.Add("O nome do veiculo não pode ser vazio");
+        validacoes.Mensagem.Add("O nome do veiculo nï¿½o pode ser vazio");
     }
 
     if (string.IsNullOrEmpty(veiculoDTO.Marca))
     {
-        validacoes.Mensagem.Add("A marca do veiculo não pode ficar embranco");
+        validacoes.Mensagem.Add("A marca do veiculo nï¿½o pode ficar embranco");
     }
 
     if (veiculoDTO.Ano < 1950)

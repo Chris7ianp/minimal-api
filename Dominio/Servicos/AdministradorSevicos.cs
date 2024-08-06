@@ -14,6 +14,19 @@ public class AdministradorServicos : IAdministradorServicos
     {
         _contexto = contexto;
     }
+
+    public Administrador? BuscarPorId(int id)
+    {
+        return _contexto.Administradores.Where(w => w.Id == id).FirstOrDefault();
+    }
+
+    public Administrador Incluir(Administrador administrador)
+    {
+        _contexto.Administradores.Add(administrador);
+        _contexto.SaveChanges();
+        return administrador;
+    }
+
     public Administrador? Login(LoginDTO loginDTO)
     {
         var adm = _contexto.Administradores.Where(
@@ -21,5 +34,17 @@ public class AdministradorServicos : IAdministradorServicos
                                                  ).FirstOrDefault();
         
         return adm;
+    }
+
+    public List<Administrador> Todos(int? pagina)
+    {
+        var query = _contexto.Administradores.AsQueryable();
+        int itensPorPagina = 10;
+
+        if(pagina != null){
+            query = query.Skip(((int)pagina -1) * itensPorPagina).Take(itensPorPagina);
+        }
+
+        return query.ToList();
     }
 }
