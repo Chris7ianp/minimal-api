@@ -5,6 +5,14 @@
     {
       "AbsoluteMoniker": "D:0:0:{15EAFAB6-6161-4D8D-8F60-946C7BC9EC02}|minimal-api.csproj|c:\\users\\christian-paulo\\desktop\\dio\\projetodioa-api\\minimal-api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{15EAFAB6-6161-4D8D-8F60-946C7BC9EC02}|minimal-api.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15EAFAB6-6161-4D8D-8F60-946C7BC9EC02}|minimal-api.csproj|c:\\users\\christian-paulo\\desktop\\dio\\projetodioa-api\\minimal-api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{15EAFAB6-6161-4D8D-8F60-946C7BC9EC02}|minimal-api.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15EAFAB6-6161-4D8D-8F60-946C7BC9EC02}|minimal-api.csproj|c:\\users\\christian-paulo\\desktop\\dio\\projetodioa-api\\minimal-api\\dominio\\modelview\\administradorlogado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15EAFAB6-6161-4D8D-8F60-946C7BC9EC02}|minimal-api.csproj|solutionrelative:dominio\\modelview\\administradorlogado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,11 +22,37 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Christian-Paulo\\Desktop\\DIO\\ProjetoDIOA-API\\minimal-api\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\Christian-Paulo\\Desktop\\DIO\\ProjetoDIOA-API\\minimal-api\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-08-08T15:27:45.212Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AdministradorLogado.cs",
+              "DocumentMoniker": "C:\\Users\\Christian-Paulo\\Desktop\\DIO\\ProjetoDIOA-API\\minimal-api\\Dominio\\ModelView\\AdministradorLogado.cs",
+              "RelativeDocumentMoniker": "Dominio\\ModelView\\AdministradorLogado.cs",
+              "ToolTip": "C:\\Users\\Christian-Paulo\\Desktop\\DIO\\ProjetoDIOA-API\\minimal-api\\Dominio\\ModelView\\AdministradorLogado.cs",
+              "RelativeToolTip": "Dominio\\ModelView\\AdministradorLogado.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-08T15:19:20.193Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -28,7 +62,7 @@
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\Christian-Paulo\\Desktop\\DIO\\ProjetoDIOA-API\\minimal-api\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAADYAAAAAAAAAAAAjwDQAAAAAAAAA",
+              "ViewState": "AQIAAIEAAAAAAAAAAAAmwJgAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-04T21:08:29.438Z",
               "EditorCaption": ""
