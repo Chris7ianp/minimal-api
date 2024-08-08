@@ -3,6 +3,8 @@ using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
@@ -102,6 +104,7 @@ string GerarTokenJwt(Administrador administrador)
     {
         new Claim("Email", administrador.Email),
         new Claim("Perfil", administrador.Perfil),
+        new Claim(ClaimTypes.Role, administrador.Perfil),
     };
 
     var token = new JwtSecurityToken(
@@ -150,7 +153,9 @@ app.MapGet("/administradores", ([FromQuery] int? pagina, IAdministradorServicos 
 
 
     return Results.Ok(adms);
-}).RequireAuthorization().WithTags("Administradores"); // Caso não funcione, retirar o RequireAutorization();
+}).RequireAuthorization()
+.RequireAuthorization(new AuthorizeAttribute{ Roles = "Adm" })
+.WithTags("Administradores"); // Caso não funcione, retirar o RequireAutorization();
 
 app.MapGet("/administradores/{id}", ([FromRoute] int id, IAdministradorServicos administradorServicos) =>
 {
@@ -168,7 +173,9 @@ app.MapGet("/administradores/{id}", ([FromRoute] int id, IAdministradorServicos 
         Perfil = administrador.Perfil
     });
 
-}).RequireAuthorization().WithTags("Administradores");
+}).RequireAuthorization()
+.RequireAuthorization(new AuthorizeAttribute{ Roles = "Adm" })
+.WithTags("Administradores");
 
 app.MapPost("/administradores", ([FromBody] AdministradorDTO administradorDTO, IAdministradorServicos administradorServicos) =>
 {
@@ -211,7 +218,9 @@ app.MapPost("/administradores", ([FromBody] AdministradorDTO administradorDTO, I
     });
 
 
-}).RequireAuthorization().WithTags("Administradores");
+}).RequireAuthorization()
+.RequireAuthorization(new AuthorizeAttribute{ Roles = "Adm" })
+.WithTags("Administradores");
 
 
 
@@ -229,12 +238,12 @@ ErroDeValidacoes validaDTO(VeiculoDTO veiculoDTO)
 
     if (string.IsNullOrEmpty(veiculoDTO.Nome))
     {
-        validacoes.Mensagem.Add("O nome do veiculo n�o pode ser vazio");
+        validacoes.Mensagem.Add("O nome do veiculo não pode ser vazio");
     }
 
     if (string.IsNullOrEmpty(veiculoDTO.Marca))
     {
-        validacoes.Mensagem.Add("A marca do veiculo n�o pode ficar embranco");
+        validacoes.Mensagem.Add("A marca do veiculo não pode ficar embranco");
     }
 
     if (veiculoDTO.Ano < 1950)
@@ -265,7 +274,9 @@ app.MapPost("/veiculos", ([FromBody] VeiculoDTO veiculoDTO, IVeiculosServico vei
     veiculosServico.Incluir(veiculo);
 
     return Results.Created($"/veiculo/{veiculo.Id}", veiculo);
-}).RequireAuthorization().WithTags("Veiculos");
+}).RequireAuthorization()
+.RequireAuthorization(new AuthorizeAttribute{ Roles = "Adm, Editor" })
+.WithTags("Veiculos");
 
 
 app.MapGet("/veiculos", ([FromQuery] int? pagina, IVeiculosServico veiculosServico) =>
@@ -287,7 +298,10 @@ app.MapGet("/veiculos/{id}", ([FromRoute] int id, IVeiculosServico veiculosServi
 
     return Results.Ok(veiculos);
 
-}).RequireAuthorization().WithTags("Veiculos");
+})
+.RequireAuthorization()
+.RequireAuthorization(new AuthorizeAttribute{ Roles = "Adm, Editor" })
+.WithTags("Veiculos");
 
 
 app.MapPut("/veiculos/{id}", ([FromRoute] int id, VeiculoDTO veiculoDTO, IVeiculosServico veiculosServico) =>
@@ -315,7 +329,10 @@ app.MapPut("/veiculos/{id}", ([FromRoute] int id, VeiculoDTO veiculoDTO, IVeicul
 
     return Results.Ok(veiculos);
 
-}).RequireAuthorization().WithTags("Veiculos");
+})
+.RequireAuthorization()
+.RequireAuthorization(new AuthorizeAttribute{ Roles = "Adm" })
+.WithTags("Veiculos");
 
 
 app.MapDelete("/veiculos/{id}", ([FromRoute] int id, IVeiculosServico veiculosServico) =>
@@ -332,7 +349,10 @@ app.MapDelete("/veiculos/{id}", ([FromRoute] int id, IVeiculosServico veiculosSe
 
     return Results.NoContent();
 
-}).RequireAuthorization().WithTags("Veiculos");
+})
+.RequireAuthorization()
+.RequireAuthorization(new AuthorizeAttribute{ Roles = "Adm" })
+.WithTags("Veiculos");
 #endregion
 
 #region App
